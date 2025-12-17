@@ -1,58 +1,90 @@
-# Analyzing_Californa_Housing_Data_using_Pyspark
-Project Overview
-This project utilizes PySpark to analyze housing data from California, aiming to uncover insights into housing trends, pricing patterns, and demographic influences. The analysis is geared towards understanding the various factors that contribute to housing values and how they vary across different regions and demographics.
+#  Analyzing California Housing Data using PySpark
 
-Objectives
+##  Project Overview
+This project uses **PySpark** to analyze the **California Housing Dataset** and uncover insights into housing trends, pricing patterns, and demographic influences.  
+The goal is to understand how location, income, population, and housing characteristics impact **median house values** across California.
+
+---
+
+##  Objectives
 The primary objectives of this analysis are to:
 
-Investigate the relationships between housing characteristics and their corresponding values.
-Identify patterns and trends in housing data over time.
-Examine how demographic factors influence housing prices across different regions.
-Problem Statements
-Find the top regions or neighborhoods by median house value.
-Analyze the distribution of median income by housing age bucket.
-Examine the correlation between income and house value using income buckets.
-Identify outliers in the "rooms per household" ratio.
-Compute average "bedrooms per room" for each region.
-Calculate population density (population per square unit) using latitude and longitude bins.
-Measure year-to-year percentage growth in median house value per region.
-Split house values into deciles and compute average features per decile.
-Compare younger versus older houses in terms of price per room.
-Perform regression residual analysis to find overvalued and undervalued areas.
-Analyze temporal trends of income and house values over years.
-Compute the "affordability index" (income-to-house-value ratio) per region.
-Run K-Means clustering on features and profile each cluster.
-Find nearest neighboring blocks and compare their house value differences.
-Compute moving average of house values along longitude (spatial trend).
-Compare house prices across low, medium, and high population density buckets.
-Compare elasticities of house value with income and total bedrooms using correlations.
-Create a histogram or bucket count of housing median age.
-For each income decile, compute variance in house values to study price dispersion.
-Compare border versus interior blocks within each region to detect "edge effects."
-Dataset
-The analysis is based on the California Housing dataset, which includes aggregated data from the 1990 census. Each record represents a block group and contains features such as geographic coordinates, median house age, total rooms, population, median income, and median house value.
+- Investigate relationships between housing characteristics and house values  
+- Identify pricing patterns and trends across regions  
+- Examine the impact of demographic factors on housing prices  
 
-Methodology
-The analysis is conducted using PySpark to handle data manipulation and aggregation efficiently. The workflow includes:
+---
 
-Utilizing Spark DataFrames for robust, large-scale data processing.
-Applying statistical functions to compute descriptive statistics.
-Generating visualizations with libraries like Matplotlib and Seaborn after collecting aggregated data from Spark.
-Getting Started
-Prerequisites
-Python (>=3.7)
-Apache Spark
-PySpark
-Installation
-Clone the repository to your local machine:
+##  Problem Statements
+This project answers the following analytical questions:
 
-git clone https://github.com/smusab9152/Analyzing_Californa_Housing_Data_using_Pyspark.git
-cd Analyzing_Californa_Housing_Data_using_Pyspark
-Install the required Python packages:
+1. Identify top regions by **median house value**
+2. Analyze **median income distribution** by housing age buckets
+3. Examine **income vs house value correlation**
+4. Detect outliers in **rooms per household**
+5. Compute **bedrooms-to-rooms ratio** by region
+6. Calculate **population density** using latitude–longitude bins
+7. Measure **year-to-year growth** in median house value
+8. Split house values into **deciles** and analyze feature averages
+9. Compare **younger vs older houses** on price per room
+10. Perform **regression residual analysis** to detect over/undervalued regions
+11. Analyze **temporal trends** in income and housing prices
+12. Compute **affordability index** (income-to-house-value ratio)
+13. Apply **K-Means clustering** and profile clusters
+14. Find **nearest neighboring blocks** and compare price differences
+15. Compute **spatial moving averages** along longitude
+16. Compare house prices across **population density buckets**
+17. Analyze **price elasticities** using correlations
+18. Create **histogram of housing median age**
+19. Measure **price dispersion** using variance per income decile
+20. Detect **border vs interior block effects**
 
+---
+
+##  Dataset
+The analysis is based on the **California Housing Dataset** derived from the **1990 U.S. Census**.
+
+Each record represents a **block group** and includes:
+- Latitude & Longitude  
+- Median house age  
+- Total rooms & bedrooms  
+- Population & households  
+- Median income  
+- Median house value  
+
+---
+
+##  Methodology
+The analysis is performed using **PySpark** for scalable data processing.
+
+Key steps include:
+- Using **Spark DataFrames** for transformations and aggregations  
+- Applying **statistical functions** for descriptive analysis  
+- Collecting aggregated data from Spark for visualization  
+- Creating plots using **Matplotlib** and **Seaborn**  
+
+---
+
+## Getting Started
+
+### 🔧 Prerequisites
+- Python **3.7+**
+- Apache Spark
+- PySpark
+
+---
+## Install Dependencies 
 pip install pyspark pandas matplotlib seaborn
-Usage
-To run the analysis, execute the main Jupyter Notebook or Python script. Ensure you have downloaded the California housing dataset and placed it in the appropriate directory as referenced in the code.
 
-Tags
-PySpark, Data Analysis, California Housing, Big Data, Apache Spark, Python, Data Visualization, Data Science, Exploratory Data Analysis
+## Usage
+
+Run the main Jupyter Notebook or Python script
+
+Download the California Housing dataset
+
+Place the dataset in the directory referenced in the code
+
+ ## Tags
+
+PySpark Apache Spark Big Data Data Analysis California Housing
+Exploratory Data Analysis Data Science Python Data Visualization
